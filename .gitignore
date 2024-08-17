@@ -1,0 +1,6 @@
+src/output/
+data.json
+src/gradient.mp4
+assets/*.mp4
+.env/
+.env
