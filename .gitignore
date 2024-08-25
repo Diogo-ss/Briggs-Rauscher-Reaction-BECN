@@ -1,4 +1,5 @@
 src/output/
+output/
 data.json
 src/gradient.mp4
 assets/*.mp4

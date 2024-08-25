@@ -20,9 +20,9 @@ CURRENT_DIR = "src"
 ASSETS = "assets"
 VIDEO_NAME = args.video_name
 BASE_NAME = VIDEO_NAME.split(".")[0]
-OUTPUT_DIR = join(CURRENT_DIR, "output", BASE_NAME)
+OUTPUT_DIR = join("output", BASE_NAME)
 OUTPUT_IMG = join(OUTPUT_DIR, "img")
-OUTPUT_DATA = join(OUTPUT_DIR, BASE_NAME + ".json")
+OUTPUT_DATA = join(OUTPUT_DIR, "data.json")
 IGNORED_COLORS_PATH = join(ASSETS, "ignored_colors.json")
 IGNORED_COLORS = {}
 
