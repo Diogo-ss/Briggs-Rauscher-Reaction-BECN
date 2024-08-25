@@ -53,10 +53,15 @@ O processamento das informações do experimento é feita utilizando um algoritm
 
 ### Plotando gráficos
 
+- Após processar um vídeo, é gerado um arquivo `.json`. Copie o conteúdo e cole na variável `data` dentro do Notebook.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Diogo-ss/Briggs-Rauscher-Reaction-BECN/blob/main/src/Graphics.ipynb)
+
+
 ## Saiba mais:
 
 - [HSV](https://en.wikipedia.org/wiki/HSL_and_HSV)
-- [spline](https://en.wikipedia.org/wiki/Spline_(mathematics))
+- [Spline](https://en.wikipedia.org/wiki/Spline_(mathematics))
 - [Matplotlib](https://matplotlib.org/)
 
 ## License
