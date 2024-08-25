@@ -17,7 +17,7 @@ O processamento das informações do experimento é feita utilizando um algoritm
 - O dicionário data contém os tempos e as cores hexadecimais.
 - As cores hexadecimais são convertidas para o HSV (Matiz, Saturação, Valor), onde apenas a saturação é utilizada.
 - Os valores de saturação são suavizados usando uma spline cúbica, tornando o gráfico mais sauave.
-- Saturação pode variar de 0 à 1
+- Saturação pode variar de 0 à 1.
 - O eixo **X** mostra o tempo em segundos, e o eixo **Y** mostra a saturação.
 
 ## Uso
@@ -38,13 +38,13 @@ O processamento das informações do experimento é feita utilizando um algoritm
   source .env/bin/activate
   ```
 
-- **Instale as dependências:**:
+- **Instale as dependências:**
 
   ```sh
   pip install -r requirements.txt
   ```
 
-- **Substita `seu_video.mp4` pelo nome do seu vídeo:**
+- **Substita `seu_video.mp4` pelo nome do vídeo:**
 
 > [!IMPORTANT]
 > O vídeo deve estar dentro da pasta `assets`.
