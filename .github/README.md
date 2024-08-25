@@ -1,6 +1,6 @@
 # BECN - UFABC - Briggs–Rauscher Reaction
 
-## Processamento das Informações
+## Processamento das vídeos
 
 O processamento das informações do experimento é feita utilizando um algoritmo em Python:
 
@@ -12,7 +12,17 @@ O processamento das informações do experimento é feita utilizando um algoritm
 
 - **Dados:** As cores predominantes, associadas ao timestamp correspondente do vídeo, são armazenadas em um dicionário. Esse dicionário é então gravado em um arquivo JSON.
 
+## Gráficos (Saturação x Tempo)
+
+- O dicionário data contém os tempos e as cores hexadecimais.
+- As cores hexadecimais são convertidas para o HSV (Matiz, Saturação, Valor), onde apenas a saturação é utilizada.
+- Os valores de saturação são suavizados usando uma spline cúbica, tornando o gráfico mais sauave.
+- Saturação pode variar de 0 à 1
+- O eixo **X** mostra o tempo em segundos, e o eixo **Y** mostra a saturação.
+
 ## Uso
+
+### Processado vídeo
 
 - **Crie o ambiente virtual:**
 
@@ -40,6 +50,14 @@ O processamento das informações do experimento é feita utilizando um algoritm
   ```sh
   python src/main.py --video-name=seu_video.mp4
   ```
+
+### Plotando gráficos
+
+## Saiba mais:
+
+- [HSV](https://en.wikipedia.org/wiki/HSL_and_HSV)
+- [spline](https://en.wikipedia.org/wiki/Spline_(mathematics))
+- [Matplotlib](https://matplotlib.org/)
 
 ## License
 
