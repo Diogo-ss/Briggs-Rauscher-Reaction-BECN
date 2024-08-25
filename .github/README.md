@@ -1,6 +1,6 @@
 # BECN - UFABC - Briggs–Rauscher Reaction
 
-## Processamento das vídeos
+## Processamento dos vídeos
 
 O processamento das informações do experimento é feita utilizando um algoritmo em Python:
 
@@ -12,7 +12,7 @@ O processamento das informações do experimento é feita utilizando um algoritm
 
 - **Dados:** As cores predominantes, associadas ao timestamp correspondente do vídeo, são armazenadas em um dicionário. Esse dicionário é então gravado em um arquivo JSON.
 
-## Gráficos (Saturação x Tempo)
+## Gráficos (Saturação em função do Tempo)
 
 - O dicionário data contém os tempos e as cores hexadecimais.
 - As cores hexadecimais são convertidas para o HSV (Matiz, Saturação, Valor), onde apenas a saturação é utilizada.
@@ -23,6 +23,8 @@ O processamento das informações do experimento é feita utilizando um algoritm
 ## Uso
 
 ### Processado vídeo
+> [!IMPORTANT]
+> Use (preferencialmente) o Python `3.12.x`
 
 - **Crie o ambiente virtual:**
 
