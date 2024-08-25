@@ -10,14 +10,14 @@ O processamento das informações do experimento é feita utilizando um algoritm
 
 - **Filtragem de Cores Irrelevantes:** Cores que não são relevantes para o estudo são filtradas com base em uma lista de cores ignoradas. Se a cor extraída de um quadro estiver na lista de cores a serem ignoradas, ela é substituída por branco (`#FFFFFF`).
 
-- **Dados:** As cores predominantes, associadas ao timestamp correspondente do vídeo, são armazenadas em um dicionário. Esse dicionário é então gravado em um arquivo JSON.
+- **Dados:** As cores predominantes, associadas ao timestamp correspondente do vídeo, são armazenadas em um dicionário. Esse dicionário é então gravado em um arquivo `JSON`.
 
 ## Gráficos (Saturação em função do Tempo)
 
 - O dicionário data contém os tempos e as cores hexadecimais.
 - As cores hexadecimais são convertidas para o HSV (Matiz, Saturação, Valor), onde apenas a saturação é utilizada.
 - Os valores de saturação são suavizados usando uma spline cúbica, tornando o gráfico mais sauave.
-- Saturação pode variar de 0 à 1.
+- Saturação pode variar de 0 a 1.
 - O eixo **X** mostra o tempo em segundos, e o eixo **Y** mostra a saturação.
 
 ## Uso
